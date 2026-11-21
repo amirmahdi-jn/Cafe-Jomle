@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#11131b">
+<title>کافه‌جمله | جایی برای حرف‌های ماندگار</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="#" data-page="home"><span class="brand-mark">ک</span><span>کافه‌جمله<small>کلمات، نزدیک‌ترمان می‌کنند</small></span></a>
+    <button class="compose-side" data-action="compose"><span>＋</span> نوشتن یک جمله</button>
+    <nav class="nav-list">
+      <button class="nav-item active" data-page="home"><i>⌂</i> خانه</button>
+      <button class="nav-item" data-page="featured"><i>✦</i> برگزیده‌ها</button>
+      <button class="nav-item" data-page="popular"><i>↗</i> روبورس</button>
+      <button class="nav-item" data-page="latest"><i>◷</i> تازه‌ها</button>
+      <button class="nav-item" data-page="explore"><i>⌕</i> کاوش و جستجو</button>
+      <button class="nav-item" data-page="notifications"><i>♧</i> اعلانات <b class="nav-count">3</b></button>
+      <button class="nav-item" data-page="messages"><i>✉</i> پیام‌ها</button>
+      <button class="nav-item" data-page="profile"><i>◉</i> پروفایل من</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <button class="nav-item" id="themeToggle"><i>◐</i> تغییر پوسته</button>
+      <button class="user-mini" data-page="profile"><span class="avatar avatar-me">آ</span><span><b>آرمان نویسنده</b><small>@arman.words</small></span><strong>•••</strong></button>
+    </div>
+  </aside>
+
+  <main class="main-area">
+    <header class="topbar">
+      <div class="mobile-brand"><span class="brand-mark">ک</span><b>کافه‌جمله</b></div>
+      <div class="top-search"><span>⌕</span><input id="globalSearch" placeholder="دنبال چه جمله‌ای می‌گردی؟" autocomplete="off"><kbd>⌘ K</kbd></div>
+      <div class="top-actions"><button class="icon-btn" data-page="notifications" aria-label="اعلانات">♧<em></em></button><button class="avatar avatar-me" data-page="profile">آ</button></div>
+    </header>
+
+    <div class="content-wrap">
+      <section class="feed-column">
+        <div class="page-heading">
+          <div><span class="eyebrow" id="pageEyebrow">شنبه، ۱ آذر ۱۴۰۵</span><h1 id="pageTitle">جایی برای حالِ خوب</h1><p id="pageSubtitle">گاهی یک جمله، تمام چیزی‌ست که لازم داریم.</p></div>
+          <button class="primary-btn" data-action="compose">＋ جمله تازه</button>
+        </div>
+        <div class="welcome-banner" id="welcomeBanner">
+          <div class="banner-copy"><span class="banner-kicker">کافه‌جمله؛ خانه‌ی کلمات تو</span><h2>حرفت را بنویس،<br>شاید حالِ کسی بهتر شد.</h2><p>اینجا هر فکر کوچکی می‌تواند شروع یک اتفاق قشنگ باشد.</p><button class="banner-btn" data-action="compose">اولین جمله‌ات را بنویس <span>←</span></button></div>
+          <div class="banner-art"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="quote-art">“</div><div class="art-note">کلماتت<br>ارزش شنیده‌شدن دارند.</div></div>
+        </div>
+        <div class="feed-toolbar"><div class="feed-tabs"><button class="feed-tab active" data-filter="all">همه</button><button class="feed-tab" data-filter="following">دنبال می‌کنم</button><button class="feed-tab" data-filter="saved">ذخیره‌شده‌ها</button></div><button class="sort-btn" id="sortBtn">◈ مرتب‌سازی: جدیدترین</button></div>
+        <div id="postList" class="post-list"></div>
+        <div class="end-note">— اینجا پایانِ جمله‌ها نیست؛ آغازِ گفت‌وگوست —</div>
+      </section>
+
+      <aside class="right-column">
+        <div class="side-card daily-card"><div class="card-top"><span>✦ جمله‌ی امروز</span><span class="tiny-pill">منتخب سردبیر</span></div><blockquote>«آرامش، از جایی شروع می‌شود که خودت را با هیچ‌کس مقایسه نکنی.»</blockquote><div class="daily-author"><span class="avatar avatar-lilac">ن</span><span><b>نرگس راد</b><small>۲ ساعت پیش</small></span></div><button class="text-link" data-page="featured">دیدن برگزیده‌ها ←</button></div>
+        <div class="side-card trends-card"><div class="card-top"><span>◎ داغ‌ترین موضوع‌ها</span><span class="muted">این هفته</span></div><div class="trend"><span class="trend-num">۰۱</span><span><b>#حال_خوب</b><small>۲٫۴ هزار جمله</small></span><strong>↗</strong></div><div class="trend"><span class="trend-num">۰۲</span><span><b>#زندگی</b><small>۱٫۸ هزار جمله</small></span><strong>↗</strong></div><div class="trend"><span class="trend-num">۰۳</span><span><b>#عشق</b><small>۹۸۰ جمله</small></span><strong>↗</strong></div><div class="trend"><span class="trend-num">۰۴</span><span><b>#خودشناسی</b><small>۷۶۰ جمله</small></span><strong>↗</strong></div><button class="text-link" data-page="explore">کاوش همه موضوع‌ها ←</button></div>
+        <div class="side-card people-card"><div class="card-top"><span>♧ نویسنده‌های پیشنهادی</span><button class="more-link" data-page="explore">همه</button></div><div class="person"><span class="avatar avatar-peach">م</span><span><b>مهتاب آذر</b><small>نویسنده و رویاپرداز</small></span><button class="follow-btn">دنبال‌کردن</button></div><div class="person"><span class="avatar avatar-mint">ر</span><span><b>رها زمانی</b><small>۴۸۰ دنبال‌کننده</small></span><button class="follow-btn">دنبال‌کردن</button></div><div class="person"><span class="avatar avatar-blue">س</span><span><b>سامان نیک</b><small>اهل کلمات کوتاه</small></span><button class="follow-btn">دنبال‌کردن</button></div></div>
+        <footer class="mini-footer">درباره ما　 قوانین　 حریم خصوصی<br><span>© ۱۴۰۵ کافه‌جمله · ساخته‌شده برای کلمات</span></footer>
+      </aside>
+    </div>
+  </main>
+</div>
+
+<nav class="mobile-nav"><button class="active" data-page="home"><i>⌂</i><small>خانه</small></button><button data-page="explore"><i>⌕</i><small>کاوش</small></button><button class="mobile-add" data-action="compose">＋</button><button data-page="notifications"><i>♧</i><small>اعلان‌ها</small></button><button data-page="profile"><i>◉</i><small>پروفایل</small></button></nav>
+
+<div class="modal-backdrop" id="composeModal">
+  <div class="compose-modal">
+    <div class="modal-head"><div><span class="eyebrow">صدای تو مهم است</span><h2>جمله‌ات را با ما شریک شو</h2></div><button class="close-modal" data-action="close">×</button></div>
+    <textarea id="postInput" maxlength="500" placeholder="هر چیزی که در دلت می‌گذرد، اینجا جای خودش را دارد..."></textarea>
+    <div class="compose-meta"><span>✦ با احترام به کلمات و آدم‌ها</span><span id="charCount">۰ / ۵۰۰</span></div>
+    <div class="compose-bottom"><input id="tagInput" placeholder="# موضوع (اختیاری)"><button class="primary-btn" id="publishBtn">انتشار جمله <span>←</span></button></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
